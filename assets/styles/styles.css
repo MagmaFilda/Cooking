@@ -1,14 +1,121 @@
+:root{
+    --primary: #cfb02c;
+    --secondary: #344742;
+    --white: #ffffff;
+    --black: #000000;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .navbar{
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 25%;
+}
+.logo img{
+    width: 50%;
+    height: auto;
+    cursor: pointer;
 }
 .nav-links{
     display: flex;
     list-style: none;
-    font-size: 28px;
-    margin: 15px;
-    padding: 16px 0 16px 0;
+    font-size: 20px;
+    gap: 24px;
+}
+.nav-link{
+    border-bottom: 1px solid var(--white);
+}
+.nav-link:hover{
+    border-bottom: 1px solid var(--primary);
 }
 .nav-link a{
     text-decoration: none;
+    color: var(--secondary);
+}
+.customer-section{
+    display: flex;
+    width: 25%;
+    gap: 24px;
+}
+.cart{
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.btn{
+    border-radius: 24px;
+    background-color: var(--primary);
+    border: none;
+    padding: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: Roboto, Arial, "sans-serif";
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--secondary);
+}
+.intro-container{
+    text-align: center;
+    margin: 60px auto 0;
+}
+.intro-container h2{
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: "Inter Semi Bold", sans-serif;
+}
+.intro-container p{
+    font-size: 20px;
+}
+.intro-container select{
+    position: relative;
+    margin-top: 10px;
+    right: 20%;
+    padding: 10px 8px;
+    font-size: 18px;
+    border-radius: 3px;
+    width: 250px;
+    height: auto;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    text-align: center;
+    width: 25%;
+    padding: 30px;
+}
+.product img{
+    height: 370px;
+    cursor: pointer;
+}
+.product h3{
+    color: var(--secondary);
+}
+.old-price{
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: var(--black);
+}
+.product button{
+    background: transparent;
+    padding: 10px 30px;
+    border: solid 2px var(--primary);
+    border-radius: 24px 0;
+}
+.product button:hover{
+    background-color: var(--primary);
+    color: var(--white);
 }
