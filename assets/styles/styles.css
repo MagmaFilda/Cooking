@@ -1,6 +1,7 @@
 :root{
     --primary: #cfb02c;
     --secondary: #344742;
+    --footer: #293330;
     --white: #ffffff;
     --black: #000000;
 }
@@ -174,4 +175,81 @@ body{
     border-radius: 24px;
     padding: 16px 62px;
     font-size: 16px;
+}
+footer{
+    background-color: var(--footer);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 400px;
+}
+footer h2{
+    color: var(--white);
+}
+footer h3{
+    font-weight: normal;
+    cursor: pointer;
+}
+footer h3:hover{
+    color: #ac9222;
+}
+.underline:hover{
+    text-decoration: underline;
+}
+.footer-logo{
+    width: 50%;
+}
+.social-media{
+    width: 10%;
+    margin-top: 50px;
+}
+.footer-logo img{
+    color: var(--white);
+    width: 200%;
+    height: auto;
+    cursor: pointer;
+}
+footer i{
+    cursor: pointer;
+}
+.quick-links{
+    margin-top: 20px;
+}
+.our-services{
+    margin-top: 20px;
+}
+.footer-form{
+    margin-top: 20px;
+}
+.footer-form h3{
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.footer-form h3:hover{
+    color: var(--white);
+}
+.footer-form input{
+    padding: 10px 12px;
+    border-radius: 24px;
+    font-size: 16px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+}
+.footer-form button{
+    border: none;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 24px;
+    padding: 10px 62px;
+    font-size: 16px;
+    width: 110%;
+    height: 45px;
+    cursor: pointer;
+}
+.footer-form button:hover{
+    background-color: var(--secondary);
 }
