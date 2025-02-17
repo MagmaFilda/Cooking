@@ -7,6 +7,7 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 .navbar{
@@ -167,6 +168,7 @@ body{
 .form-text{
     position: relative;
     bottom: 10%;
+    width: 30%;
 }
 .form-text h2{
     font-size: 36px;
@@ -175,7 +177,7 @@ body{
     font-size: 18px;
     margin-top: 18px;
     font-weight: lighter;
-    width: 50%;
+    width: 92%;
 }
 .form-text h3{
     margin-top: 18px;
@@ -190,8 +192,9 @@ body{
     border-radius: 24px;
     font-size: 16px;
     height: 30px;
-    width: 100%;
+    width: 225px;
     border: none;
+    flex-wrap: nowrap;
 }
 .form-user-section{
     width: 100%;
@@ -210,6 +213,16 @@ body{
 .form-text button:hover{
     background-color: var(--footer);
 }
+@media (max-width: 1200px){
+    .form-user-section{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-text button{
+        width: 250px;
+    }
+}
 @media (max-width: 1024px){
     .form{
         flex-direction: column;
@@ -221,14 +234,13 @@ body{
     .form img{
         margin-top: 50px;
     }
+    .form-text{
+        width: 100%;
+    }
     .form-text p{
         position: relative;
         transform: translate(50%);
-    }
-    .form-user-section{
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
+        width: 50%;
     }
     .form-user-section input{
         width: 50%;
