@@ -73,14 +73,6 @@ body{
     font-size: 30px;
     cursor: pointer;
 }
-@media (max-width: 1160px){
-    .nav-links{
-        display: none;
-    }
-    .burger-menu {
-        display: block;
-    }
-}
 
 .intro-container{
     text-align: center;
@@ -103,11 +95,14 @@ body{
     border-radius: 3px;
     width: 250px;
     height: auto;
+    cursor: pointer;
 }
-.products{
+.products {
     display: flex;
     flex-wrap: wrap;
-    margin: 15px 0 50px 0;
+    margin: 15px auto 50px auto;
+    max-width: 70%;
+    gap: 20px;
 }
 .product{
     text-align: center;
@@ -140,16 +135,6 @@ body{
 .product button:hover{
     background-color: var(--primary);
     color: var(--white);
-}
-@media (max-width: 1024px){
-    .product {
-        flex: 1 1 45%;
-    }
-}
-@media (max-width: 768px){
-    .product {
-        flex: 1 1 100%;
-    }
 }
 
 .form{
@@ -213,44 +198,6 @@ body{
 .form-text button:hover{
     background-color: var(--footer);
 }
-@media (max-width: 1200px){
-    .form-user-section{
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .form-text button{
-        width: 250px;
-    }
-}
-@media (max-width: 1024px){
-    .form{
-        flex-direction: column;
-        height: 950px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .form img{
-        margin-top: 50px;
-    }
-    .form-text{
-        width: 100%;
-    }
-    .form-text p{
-        position: relative;
-        transform: translate(50%);
-        width: 50%;
-    }
-    .form-user-section input{
-        width: 50%;
-    }
-    .form-user-section button{
-        width: 50%;
-        position: relative;
-        transform: translate(50%);
-    }
-}
 
 footer{
     background-color: var(--footer);
@@ -286,8 +233,13 @@ footer h3:hover{
     height: auto;
     cursor: pointer;
 }
-footer i{
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.icons i{
     cursor: pointer;
+    font-size: 24px;
 }
 .quick-links{
     margin-top: 20px;
@@ -329,7 +281,55 @@ footer i{
 .footer-form button:hover{
     background-color: var(--secondary);
 }
+
+@media (max-width: 1200px){
+    .form-user-section{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-text button{
+        width: 250px;
+    }
+}
+@media (max-width: 1160px){
+    .nav-links{
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
 @media (max-width: 1024px){
+    .product {
+        flex: 1 1 45%;
+    }
+    .form{
+        flex-direction: column;
+        height: 950px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form img{
+        margin-top: 50px;
+    }
+    .form-text{
+        width: 100%;
+    }
+    .form-text p{
+        position: relative;
+        transform: translate(50%);
+        width: 50%;
+    }
+    .form-user-section input{
+        width: 50%;
+    }
+    .form-user-section button{
+        width: 50%;
+        position: relative;
+        transform: translate(50%);
+    }
     footer{
         height: 1000px;
         flex-direction: column;
@@ -363,7 +363,25 @@ footer i{
     }
 }
 @media (max-width: 768px){
+    .btn{
+        position: relative;
+        top: 50px;
+        transform: translate(-250%);
+    }
+    .product {
+        flex: 1 1 100%;
+    }
     .footer-form button{
         width: 55%;
+    }
+    .social-media{
+        right: 5%;
+    }
+}
+@media (max-width: 600px){
+    .btn{
+        position: relative;
+        top: 50px;
+        transform: translate(-200%);
     }
 }
